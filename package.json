@@ -9,6 +9,14 @@
   "author": "Dan Budiac",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-util": "^3.0.4"
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.0.4",
+    "gulp-concat": "^2.5.2",
+    "gulp-util": "^3.0.4",
+    "jquery": "^2.1.4"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5"
   }
 }
