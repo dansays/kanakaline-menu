@@ -4,7 +4,11 @@
   "description": "A simple cocktail menu display system",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/dansays/kanakaline-menu.git"
   },
-  "author": "Dan Budiac"
+  "author": "Dan Budiac",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.4"
+  }
 }
