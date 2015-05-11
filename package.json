@@ -1,0 +1,10 @@
+{
+  "name": "kanakaline-menu",
+  "version": "0.0.1",
+  "description": "A simple cocktail menu display system",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Dan Budiac"
+}
