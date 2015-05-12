@@ -1,26 +1,26 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-(function() {
-	'use strict';
-	
-	var $ = require('jquery')
-		, Mustache = require('mustache')
-		, io = require('socket.io-client')
-		, socket = io()
+(function () {
+	"use strict";
+
+	var $					= require("jquery")
+		, mustache	= require("mustache")
+		, io				= require("socket.io-client")
 	;
-	
-	$.getJSON('assets/json/drinks.json', function(data) {
-		var tmpl = $('#drinks-tmpl').html()
-			, html = Mustache.to_html(tmpl, data);
-		$('#drinks').html(html);
+
+	$.getJSON("assets/json/drinks.json", function (data) {
+		var tmpl = $("#drinks-tmpl").html()
+			, html = mustache.to_html(tmpl, data);
+		$("#drinks").html(html);
 	});
-	
-	$('#drinks').on('click', 'button', function() {
+
+	$("#drinks").on("click", "button", function () {
 		var button = $(this)
-			, drinkId = button.data('drinkId');
-		socket.emit('set-drink', drinkId);
-	})
-	
+			, drinkId = button.data("drinkId");
+		io().emit("set-drink", drinkId);
+	});
+
 })();
+
 },{"jquery":2,"mustache":3,"socket.io-client":4}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
