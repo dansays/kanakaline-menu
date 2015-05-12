@@ -3,13 +3,13 @@
 	left: 40px;
 	top: 40px;
 	color: white;
-	max-width: 1000px;
+	max-width: 55vw;
 	font-family: Futura;
 	z-index: 10;
 
 	h1 {
 		font-family: Lobster;
-		font-size: 15em;
+		font-size: 23vh; //15em;
 		white-space: nowrap;
 		letter-spacing: -0.01em;
 		margin-left: -20px;
@@ -17,7 +17,7 @@
 	}
 	
 	p {
-		font-size: 2.75em;
+		font-size: 4.5vh; //2.75em;
 		margin-top: 10px;
 	}
 	
@@ -26,7 +26,7 @@
 		margin-top: 30px;
 		
 		li {
-			font-size: 1.75em;
+			font-size: 2.75vh;
 			opacity: 0.8;
 			text-transform: uppercase;
 			white-space: nowrap;
