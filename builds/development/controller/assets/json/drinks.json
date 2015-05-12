@@ -3,7 +3,7 @@
 		{
 			"id": "jungle-bird",
 			"name": "Jungle Bird",
-			"description": "Theo Lieberman of The Lantern\u2019s Keep says, \u201CIt tastes like you\u2019re eating pancakes covered in maple syrup and drinking a cup of coffee.\u201D",
+			"description": "Theo Lieberman of Lantern\u2019s Keep says, \u201CIt tastes like you\u2019re eating pancakes covered in maple syrup and drinking a cup of coffee.\u201D",
 			"ingredients": [
 				"Cruzan Black Strap Rum",
 				"Campari",
@@ -14,7 +14,7 @@
 		{
 			"id": "queen-palm",
 			"name": "Queen Palm",
-			"description": "Meggings selfies Echo Park, Bushwick fixie squid whatever photo booth cray kale chips chillwave salvia quinoa actually lo-fi. Cred vinyl cornhole.",
+			"description": "\u201CI don\u2019t remember creating this drink,\u201D says Thomas Waugh, who reports finding this recipe in his pocket one morning, after a few too many post-shift Zombies at Death & Company.",
 			"ingredients": [
 				"Plymouth Gin",
 				"Don\u2019s Mix",
@@ -25,7 +25,7 @@
 		{
 			"id": "grass-kilt",
 			"name": "Grass Kilt",
-			"description": "Meggings selfies Echo Park, Bushwick fixie squid whatever photo booth cray kale chips chillwave salvia quinoa actually lo-fi. Cred vinyl cornhole.",
+			"description": "Brian Miller was inspired to make this drink by a Puerto Rican friend whose family would cut off the top of a coconut and pour scotch into it.",
 			"ingredients": [
 				"Green Tea-Infused Famous Grouse Scotch",
 				"Honey & Cinnamon Syrup",
@@ -35,7 +35,7 @@
 		{
 			"id": "tia-mia",
 			"name": "Tia Mia",
-			"description": "Meggings selfies Echo Park, Bushwick fixie squid whatever photo booth cray kale chips chillwave salvia quinoa actually lo-fi. Cred vinyl cornhole.",
+			"description": "During her time at Lani Kai, Ivy Mix wanted to make a classic tiki drink using mezcal \u2014 a decidedly non-tiki spirit. The result is a wonderful, smoky twist on a Mai Tai.",
 			"ingredients": [
 				"Appleton 12-Year Jamaican Rum",
 				"Del Maguey Vida Mezcal",
@@ -46,7 +46,7 @@
 		{
 			"id": "rita-hayworth",
 			"name": "Rita Hayworth",
-			"description": "Meggings selfies Echo Park, Bushwick fixie squid whatever photo booth cray kale chips chillwave salvia quinoa actually lo-fi. Cred vinyl cornhole.",
+			"description": "This twist on a classic margarita is named after Rita Hayworth (the woman who inspired the original margarita cocktail), whose real name was Margarita Cansino.",
 			"ingredients": [
 				"Pineapple- and Sage-Infused Herradura Silver Tequila",
 				"Honey Syrup",
