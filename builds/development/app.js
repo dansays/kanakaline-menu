@@ -10,11 +10,10 @@ http.listen(3000);
 app.use('/menu', express.static('menu'));
 app.use('/controller', express.static('controller'));
 
-
-//controller.get('/drink/:id', function(req, res) {
-//	SetDrink(req.params.id);
-//	res.send('okay');
-//});
+app.get('/drink/:id', function(req, res) {
+	setDrink(req.params.id);
+	res.send('okay');
+});
 
 io.on('connection', function(socket) {
 	console.log('A user connected');
