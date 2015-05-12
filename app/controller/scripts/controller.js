@@ -6,7 +6,7 @@
 		, io				= require("socket.io-client")
 	;
 
-	$.getJSON("assets/json/drinks.json", function (data) {
+	$.getJSON("json/drinks.json", function (data) {
 		var tmpl = $("#drinks-tmpl").html()
 			, html = mustache.to_html(tmpl, data);
 		$("#drinks").html(html);

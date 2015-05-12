@@ -5,7 +5,7 @@
 		, app				= express()
 		, http			= require("http").Server(app)
 		, io 				= require("socket.io")(http)
-		, drinks		= require("./controller/assets/json/drinks.json").drinks
+		, drinks		= require("./controller/json/drinks.json").drinks
 	;
 
 	http.listen(3000);

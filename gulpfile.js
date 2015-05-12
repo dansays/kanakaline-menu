@@ -18,10 +18,9 @@ gulp.task('sass', function() {
 			.pipe(compass({
 				sass: 'app/' + app + '/sass',
 				css: 'app/' + app,
-				image: 'app/' + app + '/assets/images',
+				image: 'app/' + app + '/images',
 				style: 'expanded'
 			}).on('error', gutil.log))
-			//.pipe(gulp.dest('app/' + app));
 	});
 });
 
