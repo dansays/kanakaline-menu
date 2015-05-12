@@ -6,7 +6,7 @@ var gulp 				= require('gulp')
 ;
 
 gulp.task('watch', function() {
-	gulp.watch('app/**/*.scss', ['sass']);
+	gulp.watch('app/**/sass/*.scss', ['sass']);
 	gulp.watch('app/**/scripts/*.js', ['js']);
 });
 
@@ -17,10 +17,11 @@ gulp.task('sass', function() {
 		gulp.src('app/' + app + '/sass/styles.scss')
 			.pipe(compass({
 				sass: 'app/' + app + '/sass',
+				css: 'app/' + app,
 				image: 'app/' + app + '/assets/images',
 				style: 'expanded'
 			}).on('error', gutil.log))
-			.pipe(gulp.dest('app/' + app));
+			//.pipe(gulp.dest('app/' + app));
 	});
 });
 
