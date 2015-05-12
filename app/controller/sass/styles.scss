@@ -1,2 +1,17 @@
 @import 'compass';
 @import 'compass/reset';
+
+body {
+	padding: 5px;
+}
+
+button {
+	-webkit-appearance: none;
+	background-color: orange;
+	border: none;
+	padding: 20px;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	font-size: 2em;
+}
