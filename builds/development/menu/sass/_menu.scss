@@ -1,37 +1,40 @@
-.drink {
+#drink {
 	position: fixed;
 	left: 40px;
 	top: 40px;
 	color: white;
 	max-width: 1000px;
 	font-family: Futura;
-}
+	z-index: 10;
 
-#drink-name {
-	font-family: Lobster;
-	font-size: 15em;
-	letter-spacing: -0.01em;
-	margin-left: -20px;
-	margin-right: -125px;
-}
-
-#drink-description {
-	font-size: 2.75em;
-	margin-top: 10px;
-}
-
-#drink-ingredients {
-	display: block;
-	margin-top: 30px;
-	
-	li {
-		font-size: 1.75em;
-		opacity: 0.8;
-		text-transform: uppercase;
+	h1 {
+		font-family: Lobster;
+		font-size: 15em;
 		white-space: nowrap;
-		display: inline;
-		
-		&::after { content: ', '; }
-		&:last-child::after { content: ''; }
+		letter-spacing: -0.01em;
+		margin-left: -20px;
+		margin-right: -125px;
 	}
+	
+	p {
+		font-size: 2.75em;
+		margin-top: 10px;
+	}
+	
+	ul {
+		display: block;
+		margin-top: 30px;
+		
+		li {
+			font-size: 1.75em;
+			opacity: 0.8;
+			text-transform: uppercase;
+			white-space: nowrap;
+			display: inline;
+			
+			&::after { content: ', '; }
+			&:last-child::after { content: ''; }
+		}
+	}
+
 }

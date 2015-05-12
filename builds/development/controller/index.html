@@ -7,26 +7,19 @@
 		<meta name="description" content="A simple menu system for cocktail parties" />
 
 		<title>Kana Kaline Menu</title>
-		<link rel="stylesheet" href="styles.css" />
 	</head>
 
 	<body>
-		<video src="assets/movies/beach.mp4" autoplay></video>
-
-		<div id="drink"></div>
+		<h1>Controller</h1>
+		<div id="drinks"></div>
 		
-		<script id="drink-tmpl" type="text/template">
-			<h1>{{name}}</h1>
-			<p>{{description}}</p>
-			<ul>
-				{{#ingredients}}
-				<li>{{.}}</li>
-				{{/ingredients}}
-			</ul>
+		<script id="drinks-tmpl" type="text/template">
+			{{#drinks}}
+				<button data-drink-id="{{id}}">{{name}}!</div>
+			{{/drinks}}
 		</script>
 		
 		<script src="script.js"></script>
-		
 	</body>
 
 </html>
