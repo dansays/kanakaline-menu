@@ -20,6 +20,10 @@
 		localStorage.lastDrink = data.id;
 	});
 
+	socket.on("update-volume", function (volumeLevel) {
+		$("video").prop("volume", volumeLevel / 100);
+	});
+
 })();
 
 },{"jquery":2,"mustache":3,"socket.io-client":4}],2:[function(require,module,exports){

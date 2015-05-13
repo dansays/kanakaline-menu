@@ -68,3 +68,16 @@ button {
   margin-bottom: 5px;
   font-size: 2em;
 }
+
+#volume {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 20px 10px;
+}
+#volume input {
+  width: 100%;
+}

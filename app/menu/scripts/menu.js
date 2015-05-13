@@ -19,4 +19,8 @@
 		localStorage.lastDrink = data.id;
 	});
 
+	socket.on("update-volume", function (volumeLevel) {
+		$("video").prop("volume", volumeLevel / 100);
+	});
+
 })();

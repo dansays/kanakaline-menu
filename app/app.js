@@ -21,7 +21,12 @@
 			}
 		});
 	};
-	
+
+	var setVolume = function (volumeLevel) {
+		console.log("Volume set to " + volumeLevel);
+		io.sockets.emit("update-volume", volumeLevel);
+	};
+
 	app.get("/", function (req, res) {
 		res.redirect("/menu/");
 	});
@@ -34,6 +39,7 @@
 	io.on('connection', function (socket) {
 		console.log("A user connected");
 		socket.on("set-drink", setDrink);
+		socket.on("set-volume", setVolume);
 	});
 
 })();
