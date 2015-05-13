@@ -21,6 +21,10 @@
 			}
 		});
 	};
+	
+	app.get("/", function (req, res) {
+		res.redirect("/menu/");
+	});
 
 	app.get("/drink/:id", function (req, res) {
 		setDrink(req.params.id);
