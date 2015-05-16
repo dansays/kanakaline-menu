@@ -14,6 +14,7 @@
 		<video src="movies/beach.mp4" autoplay loop></video>
 
 		<div id="drink"></div>
+		<div id="message"></div></div>
 		
 		<script id="drink-tmpl" type="text/template">
 			<h1>{{name}}</h1>
@@ -23,6 +24,11 @@
 				<li>{{.}}</li>
 				{{/ingredients}}
 			</ul>
+		</script>
+		
+		<script id="message-tmpl" type="text/template">
+			<h1>{{title}}</h1>
+			<p>{{message}}</p>
 		</script>
 		
 		<script src="script.js"></script>

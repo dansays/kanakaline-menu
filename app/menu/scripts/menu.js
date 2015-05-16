@@ -22,5 +22,11 @@
 	socket.on("update-volume", function (volumeLevel) {
 		$("video").prop("volume", volumeLevel / 100);
 	});
+	
+	$.getJSON("/controller/json/drinks.json", function(data) {
+		var tmpl = $("#message-tmpl").html()
+			, html = mustache.to_html(tmpl, data.message);
+		$("#message").html(html);
+	});
 
 })();
