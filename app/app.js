@@ -6,6 +6,7 @@
 		, http			= require("http").Server(app)
 		, io 				= require("socket.io")(http)
 		, drinks		= require("./controller/json/drinks.json").drinks
+		, current		// Current drink
 	;
 
 	http.listen(3000);
@@ -18,10 +19,11 @@
 			if (drink.id === id) {
 				console.log("New Drink: " + drink.name);
 				io.sockets.emit("update-drink", drink);
+				current = drink; 
 			}
 		});
 	};
-
+	
 	var setVolume = function (volumeLevel) {
 		console.log("Volume set to " + volumeLevel);
 		io.sockets.emit("update-volume", volumeLevel);
@@ -38,6 +40,7 @@
 
 	io.on('connection', function (socket) {
 		console.log("A user connected");
+		socket.emit("update-drink", current);
 		socket.on("set-drink", setDrink);
 		socket.on("set-volume", setVolume);
 	});
